@@ -15,3 +15,6 @@ Learn different concepts in JS
 ## apply, call and bind methods
 ## Function currying
 
+## An interesting reference to JS array operations
+    ![Array Operations](src/assets/CommonArrayOperations.png)
+
