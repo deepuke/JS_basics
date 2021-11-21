@@ -16,5 +16,5 @@ Learn different concepts in JS
 ## Function currying
 
 ## An interesting reference to JS array operations
-    ![Array Operations](src/assets/CommonArrayOperations.png)
+    ![Array Operations](https://github.com/deepuke/JS_basics/blob/main/src/assets/CommonArrayOperations.png)
 
