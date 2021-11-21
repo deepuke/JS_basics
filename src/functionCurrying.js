@@ -1,7 +1,10 @@
+
+// Function currying sample normal way with 'bind' method
 let multiply = (x, y) => {
     console.log(x * y);
 }
 
+// Function currying sample using closures
 let multiply_New = (x) => {
     return (y) => {
         console.log(x * y);

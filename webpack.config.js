@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: { import: "./src/index.js", dependOn: "shared" },
+    index: { import: "./src/index.js" /*, dependOn: "shared" */ },
     //print: { import: "./src/print.js", dependOn: "shared" },
     //shared: "lodash",
   },
@@ -32,6 +32,13 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        dependency: { not: ['url'] },
+        use: [{
+          loader: 'url-loader'
+        }]
       },
       {
         test: /\.m?js$/,

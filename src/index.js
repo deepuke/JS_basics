@@ -2,6 +2,7 @@ import _ from 'lodash';
 import log from './print.js';
 import {} from './functionCurrying.js';
 import './style.css';
+import Img from './assets/CommonArrayOperations.png';
 
 console.log('Hi everyone... :) ');
 
@@ -15,6 +16,13 @@ function component() {
     log(new Date, "Debug", "some debug");
 
     log(new Date())("Debug")('Debugging code result');
+
+
+    const myImg = new Image();
+    myImg.src = Img;
+
+    element.appendChild(myImg);
+
     return element;
   }
 
