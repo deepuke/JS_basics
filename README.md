@@ -3,9 +3,9 @@ Learn different concepts in JS
 
 # Basic setup
 
-npm i
+`npm i`
 
-npm start
+`npm start`
 
 
 # Topics
